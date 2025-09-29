@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<labwc_config>
+
+  <theme>
+    <name></name>
+    <cornerRadius>8</cornerRadius>
+    <font name="JetBrains Mono" size="11" />
+  </theme>
+
+  <keyboard>
+    <default />
+    <keybind key="W-Return">
+      <action name="Execute" command="kitty" />
+    </keybind>
+    <default />
+   
+    <keybind key="W-space">
+      <action name="Execute" command="fuzzel" />
+    </keybind>
+
+    <keybind key="W-e">
+      <action name="Execute" command="thunar" />
+    </keybind>
+
+    <keybind key="W-p">
+      <action name="Execute" command="waypaper" />
+    </keybind>
+
+    <!-- Trocar workspace -->
+    <keybind key="W-1"><action name="GoToDesktop" to="1" wrap="yes" /></keybind>
+    <keybind key="W-2"><action name="GoToDesktop" to="2" wrap="yes" /></keybind>
+    <keybind key="W-3"><action name="GoToDesktop" to="3" wrap="yes" /></keybind>
+    <keybind key="W-4"><action name="GoToDesktop" to="4" wrap="yes" /></keybind>
+    <keybind key="W-5"><action name="GoToDesktop" to="5" wrap="yes" /></keybind>
+
+    <!-- Mover janela ativa -->
+    <keybind key="W-C-1"><action name="SendToDesktop" to="1" follow="no" wrap="no" /></keybind>
+    <keybind key="W-C-2"><action name="SendToDesktop" to="2" follow="no" wrap="no" /></keybind>
+    <keybind key="W-C-3"><action name="SendToDesktop" to="3" follow="no" wrap="no" /></keybind>
+    <keybind key="W-C-4"><action name="SendToDesktop" to="4" follow="no" wrap="no" /></keybind>
+    <keybind key="W-C-5"><action name="SendToDesktop" to="5" follow="no" wrap="no" /></keybind>
+
+  </keyboard>
+
+  <desktops>
+    <number>5</number>
+    <names>
+      <name>Web</name>
+      <name>Dev</name>
+      <name>Chat</name>
+      <name>Media</name>
+      <name>Misc</name>
+    </names>
+  </desktops>
+
+  <mouse>
+    <default />
+  </mouse>
+
+  <!-- Barra superior -->
+  <bar>
+    <position>top</position>
+    <height>28</height>
+    <background>#282c34</background>
+    <foreground>#d8dee9</foreground>
+    <workspace_switcher>true</workspace_switcher>
+    <status_command>~/.config/labwc/bar_status.sh</status_command>
+  </bar>
+
+</labwc_config>
