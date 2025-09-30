@@ -6,7 +6,16 @@
     <cornerRadius>8</cornerRadius>
     <font name="JetBrains Mono" size="11" />
   </theme>
+   
+   <input>
+    <device>
+        <name>usb-2a7a_CASUE_USB_KB</name>
+        <layout>br</layout>
+        <variant>abnt2</variant>
+    </device>
+   </input>
 
+ 
   <keyboard>
     <default />
     <keybind key="W-Return">
@@ -15,7 +24,7 @@
     <default />
    
     <keybind key="W-space">
-      <action name="Execute" command="fuzzel" />
+      <action name="Execute" command="rofi -show drun" />
     </keybind>
 
     <keybind key="W-e">
